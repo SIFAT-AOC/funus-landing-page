@@ -100,7 +100,7 @@ form input {
   display: none;
 }
 .hero-content {
-  height: 100vh;
+  height: calc(100vh - 96px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,7 +127,7 @@ form input {
   display: none;
 }
 #greetings-section {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   background-color: var(--section-bg-color);
 }
 
@@ -137,9 +137,10 @@ form input {
 .greeting-content h3 {
   font-size: var(--medium-font-size);
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 .greeting-content p {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 2rem;
   line-height: 32px;
 }
@@ -219,7 +220,7 @@ form input {
 
 #branding-section {
   background-color: var(--forth-section-bg-co);
-  padding: 7rem 1rem;
+  padding: 5rem 1rem;
 }
 .branding-content-mo {
   display: none;
@@ -238,11 +239,14 @@ form input {
 .branding-content h3 {
   font-size: var(--medium-font-size);
   color: #ffffff;
+  font-weight: 700;
+  line-height: 48px;
 }
 .branding-content p {
   color: #ffffff;
   font-size: var(--semi-small-font-size);
   margin: 2rem 0;
+  line-height: 32px;
 }
 
 /* full width section */
@@ -267,6 +271,7 @@ form input {
 .f-w-s-1-content h3 {
   font-size: var(--normal-font-size);
   font-weight: 300;
+  line-height: 32px;
   margin-bottom: 2rem;
 }
 .f-w-s-1-content p {
@@ -295,17 +300,17 @@ form input {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  width: 65%;
+  width: 709px;
   margin: 0 auto;
 }
 .about-pro-content h3 {
-  font-size: var(--medium-font-size);
   line-height: 56px;
   font-weight: 400;
+  font-size: 48px;
 }
 .about-pro-content p {
   text-align: center;
-  font-size: var(--semi-small-font-size);
+  font-size: 16px;
   line-height: 32px;
   margin-top: 1rem;
 }
@@ -325,7 +330,7 @@ form input {
   background-origin: content-box;
   border-radius: 25px;
   position: absolute;
-  top: 37%;
+  top: 32%;
   left: 50%;
   transform: translate(-50%, 0%);
 }
@@ -342,7 +347,7 @@ form input {
   font-size: var(--normal-font-size);
 }
 .a-p-up-s-content p {
-  font-size: var(--semi-small-font-size);
+  font-size: 16px;
   color: #fff;
   margin-bottom: 20px;
 }
