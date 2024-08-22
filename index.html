@@ -46,10 +46,10 @@
       </div>
     </nav>
     <nav class="container navbar" id="mobile-nav">
-      <div class="toggler">
-        <img src="./img/Burger menu.svg" alt="" srcset="">
+      <div id="onclickBurger" class="toggler">
+        <img  src="./img/Burger menu.svg" alt="" srcset="">
       </div>
-      <ul>
+      <ul id="navMenu">
         <li><a href=""> PRODUSE</a></li>
         <li><a href="">AFECTIUNI</a></li>
         <li><a href="">BLOG</a></li>
@@ -314,7 +314,7 @@
         
         </p>
        <p><span>Donează alături de noi!</span></p> 
-        <a href="" class="btn">Fii erou de sărbători!</a>
+        <a href="#" class="btn">Fii erou de sărbători!</a>
       </div>
       </div>
       </section>
@@ -325,7 +325,28 @@
     <footer>
       <!-- tbd -->
     </footer>
+<script>
+document.getElementById('onclickBurger').addEventListener('click', handleClick);
 
+function handleClick(e) {
+    const navMenu = document.getElementById('navMenu');
+    
+    // Check if the navMenu is currently visible or hidden
+    if (navMenu.style.display === 'none' || !navMenu.style.transform || navMenu.style.transform === 'translate(0, 183px)') {
+        // If it's hidden or in the closed state, open it
+        navMenu.style.transform = 'translate(0, -183px)';
+        navMenu.style.display = 'block'; // Ensure it's displayed
+    } else {
+        // If it's open, close it and hide it after the transition
+        navMenu.style.transform = 'translate(0, 183px)';
+        setTimeout(() => {
+            navMenu.style.display = 'none'; // Hide it after the transition
+        }, 3000); // Adjust the timeout to match the CSS transition duration
+    }
+}
+
+
+</script>
 
   </body>
 </html>

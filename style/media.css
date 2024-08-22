@@ -4,10 +4,17 @@
   #desktop-nav {
     display: none;
   }
+  #navMenu {
+    transform: translate(0, 183px); /* Initial closed state */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    display: none; /* Start hidden */
+  }
+
   #mobile-nav {
     position: relative;
     gap: 25px;
     display: flex;
+    z-index: 10000;
   }
   #mobile-nav ul {
     display: flex;
