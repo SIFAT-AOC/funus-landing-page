@@ -315,7 +315,7 @@ form input {
   margin-top: 1rem;
 }
 .about-pro-content-2 {
-  padding: 14rem 0 4rem 0;
+  padding: 10rem 0 4rem 0;
 }
 .about-con-bg-1 {
   background-color: #eddcc2;
@@ -330,7 +330,7 @@ form input {
   background-origin: content-box;
   border-radius: 25px;
   position: absolute;
-  top: 32%;
+  top: 34%;
   left: 50%;
   transform: translate(-50%, 0%);
 }
